@@ -27,6 +27,25 @@ a:hover {
   background: #ffffff url("img/pageload-spinner.gif") no-repeat center center;
 }
 
+.quote-wrapper {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quote {
+  font-style: italic;
+  font-size: 1em !important;
+  /* font-size: clamp(0.7em, 1em, 1.5em) !important; */
+  max-width: 70%;
+  line-height: 2;
+}
+
+.quote ~ p {
+  font-size: 1em !important;
+}
+
 .bloc {
   width: 100%;
   clear: both;
@@ -653,7 +672,11 @@ label,
 a {
   font-family: "helvetica";
   font-weight: 400;
-  color: #575757 !important;
+  color: #575757;
+}
+
+.row a {
+  color: #afb5c9;
 }
 
 .container {
@@ -783,17 +806,17 @@ h4 {
 }
 
 .tc-white {
-  color: #364577 !important;
+  color: #f2be63 !important;
 }
 
 .btn-atomic-tangerine {
   background: #f3976c;
-  color: #ffffff !important;
+  color: #303c6c !important;
 }
 
 .btn-atomic-tangerine:hover {
   background: #c27956 !important;
-  color: #ffffff !important;
+  color: #303c6c !important;
 }
 
 .ltc-white {
@@ -805,7 +828,7 @@ h4 {
 }
 
 .ltc-atomic-tangerine {
-  color: #f3976c !important;
+  color: #303c6c !important;
 }
 
 .ltc-atomic-tangerine:hover {

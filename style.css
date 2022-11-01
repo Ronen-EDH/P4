@@ -530,6 +530,19 @@ button {
   box-shadow: none;
 }
 
+fieldset {
+  border-style: none;
+}
+
+legend.hidden {
+  height: 1px;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: -10000px;
+  width: 1px;
+}
+
 .scrollToTop {
   width: 40px;
   height: 40px;
@@ -828,11 +841,13 @@ h4 {
 }
 
 .ltc-atomic-tangerine {
-  color: #303c6c !important;
+  color: #666666 !important;
+  font-weight: 600;
 }
 
 .ltc-atomic-tangerine:hover {
-  color: #c27956 !important;
+  color: #333333 !important;
+  font-weight: 600;
 }
 
 .icon-dark-slate-blue {
@@ -1070,4 +1085,8 @@ h4 {
   .bloc-mob-center-text {
     text-align: center;
   }
+}
+
+:focus {
+  outline: 2px solid black !important;
 }

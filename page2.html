@@ -103,44 +103,46 @@
                 success-msg="Your message has been sent."
                 fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!"
               >
-                <div class="form-group">
-                  <label for="name"> Name </label>
-                  <input id="name" class="form-control" required />
-                </div>
-                <div class="form-group">
-                  <label for="email"> Email </label>
-                  <input
-                    id="email"
-                    class="form-control"
-                    type="email"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="input_504"> How did you find me? </label>
-                  <input
-                    class="form-control"
-                    type="email"
-                    required
-                    id="input_504"
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="message">
-                    Project brief (Please be as detailed as possible including
-                    your company goals and any improvements you&rsquo;d like to
-                    have over your current website)<br /> </label
-                  ><textarea
-                    id="message"
-                    class="form-control"
-                    rows="4"
-                    cols="50"
-                    required
-                  ></textarea>
-                </div>
+                <fieldset class="form-group">
+                  <legend class="hidden">Your contact information</legend>
+                  <div class="form-group">
+                    <label for="name"> Name </label>
+                    <input id="name" class="form-control" required />
+                  </div>
+                  <div class="form-group">
+                    <label for="email"> Email </label>
+                    <input
+                      id="email"
+                      class="form-control"
+                      type="email"
+                      required
+                    />
+                  </div>
+                </fieldset>
+                <fieldset class="form-group">
+                  <legend class="hidden">Additional information</legend>
+                  <div class="form-group">
+                    <label for="input_504"> How did you find me? </label>
+                    <input class="form-control" required id="input_504" />
+                  </div>
+                  <div class="form-group">
+                    <label for="message">
+                      Project brief (Please be as detailed as possible including
+                      your company goals and any improvements you&rsquo;d like
+                      to have over your current website)<br /> </label
+                    ><textarea
+                      id="message"
+                      class="form-control"
+                      rows="4"
+                      cols="50"
+                      required
+                    ></textarea>
+                  </div>
+                </fieldset>
                 <button
                   class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine"
                   type="submit"
+                  aria-label="Submit to send Mike your contact details and Project brief"
                 >
                   Let's go Mike
                 </button>

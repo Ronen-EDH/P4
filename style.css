@@ -1095,3 +1095,7 @@ h4 {
 :focus {
   outline: 2px solid black !important;
 }
+
+footer li {
+  margin: 10px 0;
+}

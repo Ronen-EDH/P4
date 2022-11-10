@@ -869,11 +869,11 @@ h4 {
 }
 
 .bg-atlanta-20made-20sign {
-  background-image: url("img/atlanta\ made\ sign_compressed.jpg");
+  background-image: url("img/atlanta-made-sign_compressed.jpg");
 }
 
 .bg-atlanta-20made-20sign-20orange {
-  background-image: url("img/atlanta\ made\ sign\ orange_resized_compressed.jpg");
+  background-image: url("img/atlanta-made-sign-orange_resized_compressed.jpg");
 }
 
 @media (max-width: 1024px) {
@@ -899,13 +899,13 @@ h4 {
   }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .b-parallax {
     background-attachment: scroll;
   }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
   .b-parallax {
     background-attachment: scroll;
   }
@@ -924,6 +924,7 @@ h4 {
     position: relative;
   }
   .bloc {
+    /* If you want to make this work change it to env(safe-area-inset-left) */
     padding-left: constant(safe-area-inset-left);
     padding-right: constant(safe-area-inset-right);
   }

@@ -250,7 +250,7 @@ a:hover {
 .l-bloc h5 a,
 .l-bloc h6 a,
 .l-bloc p a {
-  color: rgba(0, 0, 0, 0.6);
+  color: #575757;
 }
 
 .d-bloc .panel .a-btn:hover,
@@ -538,9 +538,8 @@ legend.hidden {
   height: 1px;
   left: 0;
   overflow: hidden;
-  position: absolute;
-  top: -10000px;
   width: 1px;
+  visibility: hidden;
 }
 
 .scrollToTop {
@@ -549,8 +548,9 @@ legend.hidden {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  opacity: 0;
-  z-index: 500;
+  /* opacity: 0; */
+  visibility: hidden;
+  /* z-index: 500; */
   transition: all 0.3s ease-in-out;
 }
 
@@ -560,7 +560,8 @@ legend.hidden {
 
 .showScrollTop {
   font-size: 14px;
-  opacity: 1;
+  visibility: visible;
+  /* opacity: 1; */
 }
 
 a[data-lightbox] {
@@ -923,11 +924,11 @@ h4 {
     overflow-x: hidden;
     position: relative;
   }
-  .bloc {
-    /* If you want to make this work change it to env(safe-area-inset-left) */
+  /* .bloc {
+    If you want to make this work change it to env(safe-area-inset-left) although the validator still going to have some problems with it...
     padding-left: constant(safe-area-inset-left);
     padding-right: constant(safe-area-inset-right);
-  }
+  } */
   .bloc-group,
   .bloc-group .bloc {
     display: block;
@@ -936,8 +937,8 @@ h4 {
   .bloc-fill-screen .fill-bloc-top-edge,
   .bloc-fill-screen .fill-bloc-bottom-edge {
     padding: 0 20px;
-    padding-left: constant(safe-area-inset-left);
-    padding-right: constant(safe-area-inset-right);
+    /* padding-left: constant(safe-area-inset-left);
+    padding-right: constant(safe-area-inset-right); */
   }
 }
 
@@ -1093,10 +1094,16 @@ h4 {
   }
 }
 
+@media (max-width: 1279px) {
+  footer li {
+    margin: 10px 0;
+  }
+}
+
 :focus {
   outline: 2px solid black !important;
 }
 
-footer li {
-  margin: 10px 0;
+footer a:hover {
+  color: #ffffff;
 }

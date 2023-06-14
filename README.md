@@ -1,4 +1,4 @@
-# Optimizeing an Existing Website 
+# Optimizeing GoMikeDesigns 
 
 This is an OpenClassrooms student repo for project 4 by EDH.
 
